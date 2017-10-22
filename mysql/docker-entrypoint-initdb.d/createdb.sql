@@ -14,10 +14,11 @@
 #
 #     docker-compose exec mysql bash
 #     mysql -u root -p < /docker-entrypoint-initdb.d/createdb.sql
-#
 
-CREATE DATABASE IF NOT EXISTS `appdock` ;
-GRANT ALL ON `appdock`.* TO 'skout'@'%' ;
+
+CREATE DATABASE IF NOT EXISTS `skout` ;
+GRANT ALL ON `skout`.* TO 'appdock'@'%' ;
 
 
 FLUSH PRIVILEGES ;
+
